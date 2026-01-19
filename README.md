@@ -47,13 +47,13 @@ means grounded answers
 
 🛠️ Tech Stack
 
-Core
+Core :
 
 Python
 
 Streamlit
 
-NLP & Retrieval
+NLP & Retrieval :
 
 PyMuPDF (PDF text extraction)
 
@@ -61,7 +61,7 @@ Sentence-Transformers (MiniLM)
 
 FAISS (vector similarity search)
 
-LLM
+LLM :
 
 Groq API
 

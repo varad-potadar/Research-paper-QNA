@@ -25,45 +25,72 @@ Secure API key handling via environment variables
 
 
 🧠 System Architecture
+
 Streamlit UI
+
      ↓
+     
 PDF Text Extraction (PyMuPDF)
+
      ↓
+     
 Text Chunking
+
      ↓
+     
 Embeddings (Sentence Transformers)
+
      ↓
+     
 FAISS Vector Search
+
      ↓
+     
 Groq LLM (Answer Generation)
 means grounded answers
 
 
 🛠️ Tech Stack
+
 Core
+
 Python
+
 Streamlit
 
 NLP & Retrieval
+
 PyMuPDF (PDF text extraction)
+
 Sentence-Transformers (MiniLM)
+
 FAISS (vector similarity search)
 
 LLM
+
 Groq API
 
 
 📂 Project Structure
 .
 ├── app.py                  # Streamlit application (entry point)
+
 ├── services/
+
 │   ├── pdf_extractor.py    # PDF text extraction
+
 │   ├── chunker.py          # Text chunking logic
+
 │   ├── embedder.py         # Embedding generation
+
 │   ├── vector_store.py     # FAISS vector store
+
 │   └── qa_engine.py        # Groq-powered Q&A logic
+
 ├── requirements.txt
+
 ├── README.md
+
 └── .gitignore
 
 

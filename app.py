@@ -13,7 +13,7 @@ from services.qa_engine import answer_question
 # -------------------------------
 st.set_page_config(
     page_title="Research Paper Assistant",
-    page_icon="📄",
+    page_icon="🧬",
     layout="centered"
 )
 
@@ -80,4 +80,5 @@ if st.session_state.vector_store is not None:
 
             st.markdown("### Answer")
             st.markdown(answer)
+
 

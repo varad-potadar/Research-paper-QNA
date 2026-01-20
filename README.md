@@ -166,9 +166,13 @@ These limitations are intentional to keep the system simple and stable.
 🚀 Possible Future Improvements
 
 Citation highlighting in answers
+
 Multi-document support
+
 Answer confidence scoring
+
 Export answers with references
+
 Improved PDF layout handling
 
 

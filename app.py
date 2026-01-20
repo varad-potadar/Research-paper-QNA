@@ -26,7 +26,7 @@ if "vector_store" not in st.session_state:
 # -------------------------------
 # UI
 # -------------------------------
-st.title("📄 Research Paper Assistant")
+st.title("📄 DocQuery - A Doc Assistant")
 st.caption("Ask questions grounded strictly in the uploaded research paper.")
 
 uploaded_file = st.file_uploader(

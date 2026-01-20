@@ -1,8 +1,8 @@
-📄 Research Paper Question Answering System
+📑 DocQuery — Document-Grounded Question Answering System
 
-A lightweight research assistant that allows users to upload academic PDF papers and ask questions grounded strictly in the paper’s content.
-The system uses local document processing, semantic retrieval, and Groq-powered LLM reasoning to provide accurate, non-hallucinated answers.
-This project focuses on clarity, correctness, and simplicity, avoiding unnecessary infrastructure and overengineering.
+DocQuery is a lightweight document intelligence system that allows users to upload PDFs and ask questions grounded strictly in the content of the document.
+
+The system works across research papers, resumes, and other structured or semi-structured documents, producing accurate answers without hallucination.
 
 
 ✨ Key Features
@@ -137,21 +137,19 @@ Keys are accessed via os.getenv("GROQ_API_KEY")
 This ensures the API key is never exposed in the repository or UI.
 
 
-🔍 Design Decisions & Rationale
+🎯 Design Principles
 
-Groq-only LLM usage
-Reduces complexity and avoids multiple external dependencies.
+Document-grounded answers only
+The system explicitly avoids generating information not present in the source document.
 
-Local embeddings and retrieval
-Improves reliability and debuggability.
+Minimal infrastructure
+No external vector databases or backend servers are required.
 
-No section-based PDF heuristics
-Avoids brittle logic that often fails on academic PDFs.
+Robust over clever
+Avoids brittle heuristics for document structure.
 
-Streamlit for UI
-Prioritizes usability and clarity over frontend complexity.
-
-The goal is a robust research prototype, not a SaaS product.
+Clarity over features
+Focuses on correctness and explainability.
 
 
 ⚠️ Limitations
@@ -171,13 +169,18 @@ Export answers with references
 Improved PDF layout handling
 
 
-📌 Project Purpose
+📌 Project Motivation
 
-This project demonstrates:
+DocQuery was built to demonstrate:
+
 End-to-end document understanding
+
 Retrieval-Augmented Generation (RAG)
+
 Practical LLM integration
-Debugging and system design skills
+
+System debugging and design decisions
+
 Secure deployment practices
 
 

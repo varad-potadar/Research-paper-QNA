@@ -155,8 +155,11 @@ Focuses on correctness and explainability.
 ⚠️ Limitations
 
 Single document per session
+
 No persistent storage between sessions
+
 Optimized for text-based PDFs (not scanned images)
+
 These limitations are intentional to keep the system simple and stable.
 
 

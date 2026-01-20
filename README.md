@@ -1,4 +1,4 @@
-📑 DocQuery — Document-Grounded Question Answering System
+**📑 DocQuery — Document-Grounded Question Answering System**
 
 DocQuery is a lightweight document intelligence system that allows users to upload PDFs and ask questions grounded strictly in the content of the document.
 

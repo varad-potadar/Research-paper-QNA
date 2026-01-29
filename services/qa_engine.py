@@ -36,16 +36,18 @@ def answer_question(question: str, vector_store):
 
     # 🔑 CRITICAL PROMPT CHANGE
     prompt = f"""
-You are a research assistant.
+You are a document-grounded question answering system.
 
 Using ONLY the information provided in the context below,
-answer the question. You may summarize, combine, or infer
-from multiple parts of the context, but you must NOT use
-any external knowledge.
+answer the question accurately and concisely.
 
-If the context does not contain enough information to
-answer the question, respond exactly with:
-Not found in the paper.
+You may summarize or combine information from multiple
+parts of the context, but you MUST NOT use any external
+knowledge or assumptions.
+
+If the answer cannot be determined strictly from the
+context, respond EXACTLY with:
+Not found in the document.
 
 Context:
 {context}
@@ -59,7 +61,7 @@ Question:
         messages=[
             {
                 "role": "system",
-                "content": "You answer questions about research papers using provided context only."
+                "content": "You answer questions using only the provided document context. Do not hallucinate."
             },
             {
                 "role": "user",
@@ -73,3 +75,4 @@ Question:
 
     print("DEBUG: Model answer:", answer)
     return answer
+

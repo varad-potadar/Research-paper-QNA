@@ -26,7 +26,7 @@ if "vector_store" not in st.session_state:
 # -------------------------------
 # UI
 # -------------------------------
-st.title("📑 DocQuery - Ask Anything")
+st.title("📑 DocQuery - Ask Me")
 st.caption("Ask questions grounded strictly in the uploaded research paper.")
 
 uploaded_file = st.file_uploader(
@@ -80,6 +80,7 @@ if st.session_state.vector_store is not None:
 
             st.markdown("### Answer")
             st.markdown(answer)
+
 
 
 
